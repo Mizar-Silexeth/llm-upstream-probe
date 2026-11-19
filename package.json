@@ -1,0 +1,35 @@
+{
+  "name": "llm-upstream-probe",
+  "version": "0.1.0",
+  "description": "检测 OpenAI 兼容端点（含第三方中转）是否在原样转发你的提示词，以及它到底有没有做前缀缓存",
+  "type": "module",
+  "bin": {
+    "llm-probe": "./bin/cli.mjs"
+  },
+  "main": "./src/index.mjs",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/probes.test.mjs",
+    "probe": "node bin/cli.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "llm",
+    "openai-compatible",
+    "proxy",
+    "relay",
+    "prompt-injection",
+    "prompt-tampering",
+    "kv-cache",
+    "prompt-caching",
+    "observability"
+  ],
+  "license": "MIT"
+}
